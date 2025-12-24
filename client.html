@@ -13,7 +13,7 @@
         height: 100vh;
       }
       p{
-        font-size: 90%;
+        font-size: 1px;
         animation: kalp 1s linear infinite alternate;
       }
       @keyframes kalp{
@@ -31,6 +31,15 @@
           document.querySelector("p").textContent="❤️";
         },50);
       },2000); 
+      const x = document.body.getBoundingClientRect().width;
+      const y = document.body.getBoundingClientRect().height;
+      let z;
+      if(x>y){
+        z = x;
+      }else{
+        z = y;
+      }
+      document.querySelector("p").style.fontSize= z + "px";
     </script>
   </body>
 </html>
