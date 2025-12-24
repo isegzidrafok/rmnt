@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      …
+    </title>
+    <style>
+      body{
+        font-family: arial;
+        background: linear-gradient(to bottom, rgb(100, 0, 0), rgb(175, 0, 0));
+        width: 100vw;
+        height: 100vh;
+      }
+      p{
+        font-size: 90vw;
+        animation: kalp 1s linear infinite alternate;
+      }
+      @keyframes kalp{
+        0%{transform: scale(0.8);}
+        100%{transform: scale(1.2);}
+      }
+    </style>
+  </head>
+    <body>
+      <p>❤️</p>
+    <script>
+      setInterval(function(){
+        document.querySelector("p").value="😍";
+        setTimeout(function(){
+          document.querySelector("p").value="❤️";
+        },50);
+      },2000); 
+    </script>
+  </body>
+</html>
