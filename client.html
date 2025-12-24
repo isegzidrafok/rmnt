@@ -13,12 +13,12 @@
         height: 100vh;
       }
       p{
-        font-size: 90vw;
+        font-size: 90%;
         animation: kalp 1s linear infinite alternate;
       }
       @keyframes kalp{
         0%{transform: scale(0.8);}
-        100%{transform: scale(1.2);}
+        100%{transform: scale(1.05);}
       }
     </style>
   </head>
@@ -26,9 +26,9 @@
       <p>❤️</p>
     <script>
       setInterval(function(){
-        document.querySelector("p").value="😍";
+        document.querySelector("p").textContent="😍";
         setTimeout(function(){
-          document.querySelector("p").value="❤️";
+          document.querySelector("p").textContent="❤️";
         },50);
       },2000); 
     </script>
