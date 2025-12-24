@@ -39,9 +39,9 @@
       const y = document.body.getBoundingClientRect().height;
       let z;
       if(x>y){
-        z = x-30;
+        z = x * (0.5);
       }else{
-        z = y-30;
+        z = y * (0.5);
       }
       document.querySelector("p").style.fontSize= z + "px";
     </script>
