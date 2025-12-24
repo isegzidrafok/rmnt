@@ -11,6 +11,10 @@
         background: linear-gradient(to bottom, rgb(100, 0, 0), rgb(175, 0, 0));
         width: 100vw;
         height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
       }
       p{
         font-size: 1px;
@@ -35,9 +39,9 @@
       const y = document.body.getBoundingClientRect().height;
       let z;
       if(x>y){
-        z = x;
+        z = x-30;
       }else{
-        z = y;
+        z = y-30;
       }
       document.querySelector("p").style.fontSize= z + "px";
     </script>
