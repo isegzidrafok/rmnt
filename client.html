@@ -17,8 +17,7 @@
         overflow: hidden;
       }
       p{
-        font-size: 1px;
-        animation: kalp 1s linear infinite alternate;
+        animation: kalp 5s linear infinite alternate;
       }
       @keyframes kalp{
         0%{transform: scale(0.8);}
@@ -33,15 +32,15 @@
         document.querySelector("p").textContent="😍";
         setTimeout(function(){
           document.querySelector("p").textContent="❤️";
-        },50);
-      },2000); 
+        },50)
+      },2000)
       const x = document.body.getBoundingClientRect().width;
       const y = document.body.getBoundingClientRect().height;
       let z;
       if(x>y){
-        z = x * (0.5);
+        z = x * (0.45);
       }else{
-        z = y * (0.5);
+        z = y * (0.45);
       }
       document.querySelector("p").style.fontSize= z + "px";
     </script>
